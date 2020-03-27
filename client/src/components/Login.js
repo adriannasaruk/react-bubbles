@@ -26,7 +26,7 @@ const Login = (props) => {
     .then(res=> {
         console.log(res);
         localStorage.setItem("token", JSON.stringify(res.data.payload))
-        props.history.push("/api/colors");
+        props.history.push("/colors");
     })
     .catch(err => {
         console.log(err)
